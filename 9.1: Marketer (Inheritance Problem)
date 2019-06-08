@@ -1,0 +1,29 @@
+import java.util.*; 
+
+/**
+   @author Tyler Unsworth 
+   @version : June 8th, 2019
+
+Program Purpose:
+   - The purpose of this program is to demonstrate inheritance through the use of the *super* method. 
+ **/
+
+public class Marketer {
+    public static void main(String[] args)      {
+  // Declaration of Objects and Initalization of Its Values
+ArrayList<String> list = new ArrayList<>();
+list.add("For"); list.add("Score"); list.add("and"); list.add("Seven"); list.add("Years"); list.add("Ago");
+
+   System.out.println("This is the original list :: " + list + "\n");
+   removeLongestString(list);
+   } // closes Main Method
+
+    public static void removeLongestString(ArrayList<String> list){
+for (int i = 1; i < list.size(); i ++){
+   if(list.get(i).length() > list.get(i - 1).length())
+       list.remove(i--); // removes the 'shorter element' then moves i back by -1
+   } // closes forLoop
+
+        System.out.println(list);
+    } // closes removeLongestString
+} // closes Main Class
