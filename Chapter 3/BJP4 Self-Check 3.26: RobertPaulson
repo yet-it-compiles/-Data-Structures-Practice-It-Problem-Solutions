@@ -1,0 +1,22 @@
+/**
+Write code that prompts the user for a phrase and a number of times to repeat it, then prints the phrase that
+many times. Here is an example dialogue with the user:
+
+What is your phrase? His name is Robert Paulson
+How many times should I repeat it? 3
+His name is Robert Paulson
+His name is Robert Paulson
+His name is Robert Paulson
+ */
+
+            // Declaration of Variables and Object
+        Scanner userInput = new Scanner(System.in);
+        int repeat;
+            // Asking Questions and saving answers
+        System.out.print("What is your phrase? ");
+        String phrase = userInput.nextLine();
+        System.out.print("How many times should I repeat it? ");
+        repeat = userInput.nextInt();
+
+        for(int i = 1; i <= repeat; i++)
+            System.out.println(phrase);
