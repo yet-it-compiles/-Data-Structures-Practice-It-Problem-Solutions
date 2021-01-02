@@ -1,0 +1,17 @@
+/**
+ Given the following variable declarations:
+ 
+ int x = 4;
+ int y = -3;
+ int z = 4;
+ */
+
+true
+false
+true
+false
+true
+false
+false
+true
+true
