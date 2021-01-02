@@ -1,0 +1,29 @@
+/**
+ The following program contains 7 errors. Correct the errors and submit a working version of the program.
+ The corrected version of the program should produce the following output:
+
+ a is the smallest!
+ */
+ 
+ public class Oops4 {
+    public static void main(String[] args) {
+          // Declaration of Variables
+        int a = 7, b = 42;
+       
+        minimum(a, b);
+       
+        if (a < b ){
+            System.out.println("a is the smallest!");
+        }
+    }
+
+    public static int minimum(int a, int b) {
+        int smaller; // make sure to initialize the variable in the beginning
+        if (a < b) {
+            smaller = a; 
+        } else {  // doesn't need a second comparitive test, as if the first test fails it can *only* be else
+            smaller = b;
+        }
+        return smaller; // variable already assigned to a value above
+    }
+}
