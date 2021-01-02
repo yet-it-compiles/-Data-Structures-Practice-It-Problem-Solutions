@@ -1,0 +1,21 @@
+/**
+ Assuming that the following variables have been declared,
+
+ //       index 0123456789012345
+ String str1 = "Frodo Baggins";
+ String str2 = "Gandalf the GRAY";
+ Evaluate the following expressions. Make sure to give a value of the appropriate type (such as including quotes around 
+ a String or apostrophes around a char).
+ */
+ 
+ str1.length()	    13   // Remembering that .length() returns a int starting at 1 *NOT* 0
+ str1.charAt(7)	    'a'  // Remembering it is asking for a char, and remembering that chars returns in single quotes ' '
+ str2.charAt(0)	    'G'
+ str1.indexOf("o")	 2   // Remembering that index implies starting at 0 *NOT* 1
+ str2.toUpperCase()	    "GANDALF THE GRAY"  // returns NOT CHANGES the string to all caps
+ str1.toLowerCase().indexOf("B")	    -1  // java convention when an index is not found
+ str1.substring(4)     "o Baggins"  // remembering that substring inclusively starts at its begining index, and ends exclusive to the ending index
+ str2.substring(3, 14)	    "dalf the GR"
+ str2.replace("a", "oo")	    "Goondoolf the GRAY"
+ str2.replace("gray", "white")	    "Gandalf the GRAY"
+ "str1".replace("r", "range")	    "strange1"  // remeber that ever iteration of r, "range" will replace it
