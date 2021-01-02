@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+/**
+ Write a complete program called "TheNameGame," where the user inputs a first and last name and a song in the following
+ format is printed about their first, then last, name. Use a method to avoid redundancy.
+
+ What is your name? Fifty Cent
+ Fifty Fifty, bo-Bifty
+ Banana-fana fo-Fifty
+ Fee-fi-mo-Mifty
+ FIFTY!
+ Cent Cent, bo-Bent
+ Banana-fana fo-Fent
+ Fee-fi-mo-Ment
+ CENT!
+ */
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+        System.out.print("What is your name? ");
+        String name = userInput.nextLine();
+        nameGenerator(name);
+    }
+
+    public static void nameGenerator(String name){
+        // Declaration of Variables/Objects
+        Scanner userInput = new Scanner(System.in);
+        String firstName, halfFirstName, halfLastname, lastName, songName;
+        int afterFirstSpace;
+
+        // Collects Name Information
+        firstName = name.substring(0, name.indexOf(' '));  // Collects input up until first space
+        halfFirstName = name.substring(1, 5);
+        afterFirstSpace = name.indexOf(' ')+1;
+        halfLastname = name.substring(afterFirstSpace+1, name.length());
+        lastName = name.substring(afterFirstSpace, name.length());
+
+
+        // Creates Song
+        System.out.println(firstName + " " + firstName + ", " + "bo-B" + halfFirstName); // crates first line
+        System.out.println("Banana-fana fo-" + firstName); // creates second line
+        System.out.println("Fee-fi-mo-M" + halfFirstName); // creates third line
+        System.out.println(firstName.toUpperCase() + "!"); // creates fourth line
+        System.out.println(lastName + " " + lastName + ", bo-B" + halfLastname); // creates fifth line
+        System.out.println("Banana-fana fo-F" + halfLastname); // creates sixth line
+        System.out.println("Fee-fi-mo-M" + halfLastname); // creates seventh line
+        System.out.println(lastName.toUpperCase() + "!"); // creates eighth line
+    }
+}
