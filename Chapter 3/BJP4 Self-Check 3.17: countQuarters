@@ -1,0 +1,18 @@
+/**
+ Write a method called countQuarters that takes an int representing a number of cents as a parameter and returns the 
+ number of quarter coins represented by that many cents. Don't count any whole dollars, because those would be 
+ dispensed as dollar bills. For example, countQuarters(64) would return 2, because 2 quarters make 50 cents, with 14 
+ extra left over. A call of countQuarters(1278) would return 3, because after the 12 dollars are taken out, 3 quarters 
+ remain in the 78 cents left.
+ */
+ 
+ public static void countQuarters(int numberOfCents){
+    numberOfCents = numberOfCents%100; // using the mod operator to reduce the total number of cents below 100
+    System.out.println(numberOfCents/25); // then take that number and see how many times 25 goes into it
+    }
+    
+    Explanation
+    -   What you see is that we are given a number of cents (1,278), and we have to find how many times (25) goes into it.  
+    We want to use the modulus operator (%) because we know when using it, it returns the *remainder* of the data it acts upon (78 cents) in this case.
+    Then we take that data and divide by 25, which will then yield 3.
+    Which is the correct answer :) 
