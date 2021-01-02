@@ -1,3 +1,15 @@
+/**
+ * What series of println statements would produce the following output?
+ * 
+ * "Several slashes are sometimes seen,"
+ * said Sally. "I've said so." See?
+ * \ / \\ // \\\ ///
+ */
+
+public class Main {
+    public static void main(String[] args) {
 System.out.println("\"Several slashes are sometimes seen,\"");
 System.out.println("said Sally. \"I've said so.\" See?");  // remembering to insert " by escape key : \"
 System.out.println("\\ / \\\\ // \\\\\\ ///");  // remembering / print normally while, doubles for \
+    }
+}
