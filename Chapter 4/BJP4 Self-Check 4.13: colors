@@ -9,11 +9,13 @@
  * What color do you want? Bork
  * Unknown color: Bork
  */
- 
+
+ // Declaration of Information Getters
 Scanner userInput = new Scanner(System.in);
 System.out.print("What color do you want? ");
 String userColor = userInput.nextLine(); 
 
+ // Declaration of Logic Tests to determine which output to produce
 if (userColor.equalsIgnoreCase("B")) {
     userColor = "Blue"; 
 System.out.println("You have chosen " + userColor + ".");
