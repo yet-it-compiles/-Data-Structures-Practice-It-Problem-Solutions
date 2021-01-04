@@ -1,0 +1,10 @@
+/**
+ * Consider the following method.
+ */
+ 
+ For each call below indicate what output is produced
+ 
+ifElseMystery1(3, 20); = 13 21
+ifElseMystery1(4, 5);	= 5 6
+ifElseMystery1(5, 5);	= 6 5
+ifElseMystery1(6, 10); = 7 11
