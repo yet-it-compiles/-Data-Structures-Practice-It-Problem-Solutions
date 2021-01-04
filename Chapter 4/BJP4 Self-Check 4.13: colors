@@ -1,0 +1,31 @@
+/**
+ * Write a piece of code that reads a shorthand text description of a color and prints the longer equivalent. Acceptable
+ * color names are B for Blue, G for Green, and R for Red. If the user types something other than B, G, or R, the 
+ * program should print an error message. Make your program case-insensitive so that the user can type an uppercase or 
+ * lowercase letter. Here are two example executions:
+ *
+ * What color do you want? R
+ * You have chosen Red.
+ * What color do you want? Bork
+ * Unknown color: Bork
+ */
+ 
+Scanner userInput = new Scanner(System.in);
+System.out.print("What color do you want? ");
+String userColor = userInput.nextLine(); 
+
+if (userColor.equalsIgnoreCase("B")) {
+    userColor = "Blue"; 
+System.out.println("You have chosen " + userColor + ".");
+    }
+else if (userColor.toLowerCase().charAt(0) == 'g'){
+    userColor = "Green";
+System.out.println("You have chosen " + userColor + ".");
+} else if (userColor.toLowerCase().charAt(0) == 'r'){
+    userColor = "Red";
+    System.out.println("You have chosen " + userColor + ".");
+}
+else if  (userColor.toLowerCase().charAt(0) != 'b' || userColor.toLowerCase().charAt(0) != 'g' || 
+          userColor.toLowerCase().charAt(0) != 'r'){ 
+     System.out.println("Unknown color: " + userColor.substring(0,userColor.length()));
+}
