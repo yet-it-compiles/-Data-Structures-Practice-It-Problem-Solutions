@@ -1,29 +1,34 @@
 /**
- The following program contains 7 errors. Correct the errors and submit a working version of the program.
+ *The following program contains 7 errors. Correct the errors and submit a working version of the program. 
  The corrected version of the program should produce the following output:
-
- a is the smallest!
+ 
+ a is the smallest! 
  */
  
- public class Oops4 {
-    public static void main(String[] args) {
-          // Declaration of Variables
-        int a = 7, b = 42;
-       
-        minimum(a, b);
-       
-        if (a < b ){
-            System.out.println("a is the smallest!");
-        }
-    }
+public class Oops4 {
+    public static void main(String[] args) {
+        int a = 7, b = 42;
+        int smallerVariable = minimum(a, b);
+        if (smallerVariable == a) {
+            System.out.println("a is the smallest!");
+        }
+    }
 
-    public static int minimum(int a, int b) {
-        int smaller; // make sure to initialize the variable in the beginning
-        if (a < b) {
-            smaller = a; 
-        } else {  // doesn't need a second comparitive test, as if the first test fails it can *only* be else
-            smaller = b;
-        }
-        return smaller; // variable already assigned to a value above
-    }
+    /**
+     * This method is used to determine which either parameter a or b is smaller than the other and then returns
+     * the smaller variable
+     * 
+     * @param a an int value passed to be tested against b
+     * @param b an int value passed to be tested against a
+     * @return the smaller variable value
+     */
+    public static int minimum(int a, int b) {
+        int smallerValue;
+        if (a < b) {
+            smallerValue = a;
+        } else {
+            smallerValue = b;
+        }
+        return smallerValue;
+    }
 }
