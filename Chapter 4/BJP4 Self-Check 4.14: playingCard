@@ -1,0 +1,63 @@
+/**
+ Write a piece of code that reads a shorthand text description of a playing card and prints the longhand 
+ equivalent. The shorthand description is the card's rank (2 through 10, J, Q, K, or A) followed by its suit
+ (C, D, H, or S). You should expand the shorthand into the form "Rank of Suit". 
+ You may assume that the user types valid input.
+
+ Here are two sample executions:
+
+ Enter a card: 9 S
+ Nine of Spades
+ Enter a card: K C
+ King of Clubs
+ (Because there are so many rank/suit combinations, you will need several if/else branches. 
+ But if you have 52 branches, one for each unique card, that is too many!)
+ */
+            // Declaration of Object
+        Scanner userInput = new Scanner(System.in);
+
+            // Declaration of Program Intro
+        System.out.print("Enter a card: ");
+        String selectedRank = userInput.next();
+        String selectedSuit = userInput.next();
+
+
+            // Declaration of Program Logic
+        if (selectedRank.equals("2")) {
+            selectedRank = "Two";
+        } else if (selectedRank.equals("3")) {
+            selectedRank = "Three";
+        } else if (selectedRank.equals("4")) {
+            selectedRank = "Forth";
+        } else if (selectedRank.equals("5")) {
+            selectedRank = "Fifth";
+        } else if (selectedRank.equals("6")) {
+            selectedRank = "Six";
+        } else if (selectedRank.equals("7")) {
+            selectedRank = "seven";
+        } else if (selectedRank.equals("8")) {
+            selectedRank = "Eight";
+        } else if (selectedRank.equals("9")) {
+            selectedRank = "Nine";
+        } else if (selectedRank.equals("10")) {
+            selectedRank = "Ten";
+        } else if (selectedRank.equalsIgnoreCase("J")) {
+            selectedRank = "Jack";
+        } else if (selectedRank.equalsIgnoreCase("Q")) {
+            selectedRank = "Queen";
+        } else if (selectedRank.equalsIgnoreCase("K")) {
+            selectedRank = "King";
+        } else if (selectedRank.equalsIgnoreCase("A")) {
+            selectedRank = "Ace";
+        }
+                if (selectedSuit.equalsIgnoreCase("C")) {
+            selectedSuit = "Clubs";
+                } else if (selectedSuit.equalsIgnoreCase("D")) {
+                    selectedSuit = "Diamonds";
+                } else if (selectedSuit.equalsIgnoreCase("H")) {
+                    selectedSuit = "Hearts";
+                } else if (selectedSuit.equalsIgnoreCase("S")) {
+                    selectedSuit = "Spades";
+                }
+
+        System.out.println(selectedRank +" of "+ selectedSuit);
