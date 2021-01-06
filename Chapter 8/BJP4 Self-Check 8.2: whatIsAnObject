@@ -1,0 +1,15 @@
+/**
+ What is an object? How is an object different from a class?
+ */
+ 
+ A) An object is not encapsulated and a class is encapsulated, making classes more powerful and reusable than objects.
+ B) Objects are used in object-oriented programming and classes are used in class-oriented programming.
+ C) A class is an instance of an object. One object can be used to create many classes.
+ D) An object is an entity that encapsulates related data and behavior, while a class is the blueprint for a type of objects.
+ E) An object is a kind of class that does not contain any behavior (methods).
+ 
+ ===
+ Answer
+ An object is an entity that encapsulates related data and behavior, while a class is the blueprint for a type of objects.
+ 
+ Objects(which is an instance of a class) has both state (data) and behavior (methods)
