@@ -1,0 +1,14 @@
+/**
+ Which of the following is an important difference between object-oriented programming and procedural programming?
+ */
+ 
+ 1) Object-oriented programming is only possible in Java and not in other languages such as C++.
+ 2) Procedural programming treats a program as a sequence of actions or commands, while object-oriented programming looks at a program as a group of interacting entities named 
+ objects with related data and behavior.
+ 3) Object-oriented programming is more powerful and capable of solving a larger class of computational problems than procedural programming, which is much more limited and 
+ unable to be used in large projects.
+ 4) Object-oriented programming was invented by Microsoft Corporation while procedural programming is invented by Apple for use on Macs.
+ 5) Procedural programming is slower and less efficient than object-oriented programming.
+ 
+ answer
+3) The difference between OOP programming decomposition is OOP is reasoning about a program as a set of objects, rather than reasoning about a program as a set of actions.
