@@ -1,0 +1,1 @@
+int[] a = new int[10]; // first declare type, name structure, set equal, new to construct a place in memory
