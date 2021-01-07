@@ -1,0 +1,22 @@
+/*
+Add methods named setX and setY to the Point class. Each method accepts an integer parameter and changes the Point object's x- or y-coordinate to be the value passed, respectively.
+
+Your code is being added to the following class:
+
+public class Point {
+    int x;
+    int y;
+    
+    // // your code goes here
+    
+}
+ */
+ 
+ === Answer ===
+public int setX(int changeX){ 
+    return this.x=changeX;
+}
+
+public int setY(int changeY){ 
+    return this.y=changeY;
+}
