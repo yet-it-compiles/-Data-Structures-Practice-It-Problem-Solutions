@@ -1,0 +1,35 @@
+/*
+The following constructor has two major problems. What are they? Find and fix the problems, and submit a working version of the code.
+
+Recall that your code is being added to the following class:
+
+public class Point {
+    int x;
+    int y;
+    
+    // // your code goes here
+    
+}
+
+ */
+
+
+=== Answers === 
+// SOLUTION 1
+
+//(Fix 1) =  make sure to remove the redundant int s 
+//(Fix 2) =  // consturctors don't have return typespecifier
+//(Optional Fix 3) decide if you like to refer to fields with this.
+
+ public Point(int initialX, int initialY) {
+    this.x = initialX;  
+    this.y = initialY;
+}
+
+// OR
+
+// SOLUTION 2
+ public Point(int initialX, int initialY) {
+    x = initialX;  
+    y = initialY;
+}
