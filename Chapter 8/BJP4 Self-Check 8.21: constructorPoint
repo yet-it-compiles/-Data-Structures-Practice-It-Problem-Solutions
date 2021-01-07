@@ -1,0 +1,20 @@
+/*
+Add a constructor to the Point class that accepts another Point as a parameter and initializes the new Point to have the same (x, y) values. Use the keyword this in your solution.
+
+Recall that your code is being added to the following class:
+
+public class Point {
+    int x;
+    int y;
+    
+    // // your code goes here
+    
+}
+ */
+ 
+ == Answer ==
+ 
+ public Point(Point p){ 
+      this.x = p.x;
+      this.y = p.y;
+}
