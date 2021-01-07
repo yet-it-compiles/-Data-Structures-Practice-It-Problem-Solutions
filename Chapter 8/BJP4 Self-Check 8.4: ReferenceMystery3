@@ -1,0 +1,13 @@
+/*
+The following program produces 4 lines of output. Write each line of output below as it would appear on the console.
+ */
+ 
+ 
+https://practiceit.cs.washington.edu/problem/view/bjp4/chapter8/s4-ReferenceMystery3
+ 
+ 
+=== Answers === 
+line 1	= 14 14
+line 2	= 7 9 14 2
+line 3	= 18 18
+line 4	= 7 9 14 18
