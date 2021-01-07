@@ -1,0 +1,30 @@
+/*
+Which of the following are differences between a field and a parameter?
+ */
+ 
+ === Answers === 
+ A) You can only have one field per class, while you can have as many parameters as you want.  [FALSE]
+ - This is incorrect, you can have any number of fields per class. 
+ REMEMBER   : 'Field' is another name for variable, but is specific to an object.
+ 
+ B) Field syntax differs because they can be declared with the 'private' keyword.  [TRUE]
+ - this is true, int nameOfField; is perfect   |   private int nameOfField; is also perfect.   Thus, there are two default ways to declare this
+ 
+ C) Fields can store many values while parameters can store only a single value.  [FALSE]
+ - Parameters can store values of anything, even objects.
+ 
+ D) Parameters must be primitive types of values, while fields can be objects.  [FALSE]
+ - Remember, 'fields' are variables that are just specific to objects.
+ 
+ E) Fields are constant and can be set only once, while parameters change on each call.  [FALSE]
+ - False, you can assign new values to any field throughout an entire program execution.
+ 
+ F) A field's scope is throughout the class, while a parameter's scope is limited to the method.  [TRUE]
+ - Fields are 'public' to the entire class, even methods... Remember, encapsulation is used to protect the fields and class from the client
+ 
+ G) A field is a variable that exists inside of an object, while a parameter is a variable inside a 
+ method whose value is passed in from outside.                                                        [FALSE]
+ - Perfectly said. Remember parameters are specific to a class as is passed from one part of a program to another. 
+ 
+ H) A field takes up more memory in the computer than a parameter does.  [FALSE]
+ - they are about the same if not perfectly the same.
