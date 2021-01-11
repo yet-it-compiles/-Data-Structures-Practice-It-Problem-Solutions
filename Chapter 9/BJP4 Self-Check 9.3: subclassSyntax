@@ -1,0 +1,8 @@
+
+Which of the following is the correct syntax to indicate that class A is a subclass of B?
+ public class A : super B {
+ public A implements B {
+ public class A extends B {   // is the correct answer
+ public A(super B) {
+ public class B extends A {
+(order shuffled)
